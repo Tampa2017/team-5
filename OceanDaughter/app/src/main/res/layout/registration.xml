@@ -12,16 +12,19 @@
         android:paddingTop="10dp"
         android:text="Registration Form"
         android:textColor="#000000"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp">
+        android:paddingTop="20dp"
+        android:paddingRight="8dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
             android:text="Teacher Name:" />
 
         <EditText
@@ -31,12 +34,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        >
+
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="School Name:" />
+            android:paddingLeft="38dp"
+            android:text="School Name:"
+
+            />
 
         <EditText
             android:layout_width="match_parent"
@@ -46,25 +55,33 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp">
+
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
+            android:paddingLeft="87dp"
             android:text="Email:" />
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        >
+
 
         <TextView
-            android:layout_width="wrap_content"
+            android:paddingLeft="57dp"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:text="Password:" />
 
@@ -77,12 +94,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        >
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="Re-Enter Password::" />
+            android:text="Re-Enter Password:"
+            />
 
         <EditText
             android:layout_width="match_parent"
@@ -95,6 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="16dp"
         android:text="Submit" />
 
 
