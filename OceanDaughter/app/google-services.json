@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "374873879401",
+    "firebase_url": "https://oceans-daughter.firebaseio.com",
+    "project_id": "oceans-daughter",
+    "storage_bucket": "oceans-daughter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374873879401:android:ce1c92adfef7e84e",
+        "android_client_info": {
+          "package_name": "com.example.android.oceansdaughter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374873879401-d55a7bubb1vs82vikk70tn16ggrkna37.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "374873879401-7kafgm55m3pvlm5c90is63j1e3pkmo6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBTxhAomC5K0RtycInou7Xs8Aki8BkgCc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
