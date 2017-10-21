@@ -1,6 +1,5 @@
 package com.example.android.oceansdaughter;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -28,7 +27,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private FirebaseAuth firebaseAuth;
 
-    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,7 +35,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        progressDialog = new ProgressDialog(this);
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
         signIN = (Button) findViewById(R.id.sign_in);
@@ -65,8 +62,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
         // if validations are OK
-        progressDialog.setMessage("Registering user");
-        progressDialog.show();
+
 
         firebaseAuth.createUserWithEmailAndPassword(email_, pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -86,7 +82,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
 
         if (view == register) {
-            //register user
+            registerUser();
         }
         if (view == signIN) {
             //sign in user
