@@ -34,18 +34,14 @@ public class RecycleViewTopicsActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
 
-        initTopicList();
+        // call method to populate view holders
+
     }
 
+    /**
+     * this method must retrieve the fields from the data base.
+     */
     private void initTopicList() {
-
-        topicsList.add(new Topic("Sharks"));
-        topicsList.add(new Topic("Mermaids"));
-        topicsList.add(new Topic("Fishes"));
-        topicsList.add(new Topic("Whales"));
-        topicsList.add(new Topic("Other"));
-
-
         mAdapter.notifyDataSetChanged();
     }
 }

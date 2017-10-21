@@ -73,6 +73,7 @@
                 android:layout_gravity="center"
                 android:onClick="register"
                 />
+
             <ImageView
                 android:layout_gravity="center"
                 android:layout_width="300dp"
