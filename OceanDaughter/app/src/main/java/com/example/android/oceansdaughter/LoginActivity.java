@@ -1,5 +1,6 @@
 package com.example.android.oceansdaughter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -14,6 +15,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import recycleview_topics.RecycleViewTopicsActivity;
 
 /**
  * A login screen that offers login via email/password.
@@ -86,6 +89,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         if (view == signIN) {
             //sign in user
+            Intent intent = new Intent(LoginActivity.this, RecycleViewTopicsActivity.class);
+            startActivity(intent);
         }
 
     }

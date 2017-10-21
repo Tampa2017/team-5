@@ -17,7 +17,6 @@ import java.util.List;
 
 public class RecycleViewTopicsActivity extends AppCompatActivity {
 
-
     private List<Topic> topicsList = new ArrayList<>();
     private RecyclerView recyclerView;
     private TopicsAdapter mAdapter;
@@ -35,13 +34,27 @@ public class RecycleViewTopicsActivity extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
 
         // call method to populate view holders
-
+        initTopicList();
     }
 
     /**
-     * this method must retrieve the fields from the data base.
+     * Mock data to represent how it will look
      */
     private void initTopicList() {
+        topicsList.add(new Topic("Shark Facts"));
+        topicsList.add(new Topic("Killer Whales"));
+        topicsList.add(new Topic("Ocean"));
+        topicsList.add(new Topic("Mermaids Program"));
+        topicsList.add(new Topic("Orion's Guardians"));
+        topicsList.add(new Topic("Educational Programs"));
+        topicsList.add(new Topic("Fantastic Beasts"));
+        topicsList.add(new Topic("Feeding Frenzy"));
+        topicsList.add(new Topic("Glow-in-the-Dark Shark"));
+        topicsList.add(new Topic("Saltie vs. Freshie "));
+        topicsList.add(new Topic("Shark Tagging "));
+        topicsList.add(new Topic("Taking A Bite Out Of STEM"));
+        topicsList.add(new Topic("Workshops"));
+
         mAdapter.notifyDataSetChanged();
     }
 }
