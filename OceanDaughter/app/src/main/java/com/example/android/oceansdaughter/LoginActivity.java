@@ -89,8 +89,37 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         if (view == signIN) {
             //sign in user
-            Intent intent = new Intent(LoginActivity.this, RecycleViewTopicsActivity.class);
-            startActivity(intent);
+            String email_ = email.getText().toString().trim();
+            String pass = password.getText().toString().trim();
+
+            if (TextUtils.isEmpty(email_)) {
+                // email is empty
+                Toast.makeText(this, "Please enter Email.", Toast.LENGTH_SHORT).show();
+                // stop function execution further
+                return;
+            }
+            if (TextUtils.isEmpty(pass)) {
+                // pass is empty
+                Toast.makeText(this, "Please enter Password.", Toast.LENGTH_SHORT).show();
+                // stop function execution further
+                return;
+            }
+
+            firebaseAuth.signInWithEmailAndPassword(email_, pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        // successful login
+                        // start profile activity here
+
+                        Intent intent = new Intent(LoginActivity.this, RecycleViewTopicsActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(LoginActivity.this, "Could not Login", Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
+
         }
 
     }
