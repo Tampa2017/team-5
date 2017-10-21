@@ -1,4 +1,4 @@
-package recycleview_topics;
+package com.example.android.oceansdaughter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.android.oceansdaughter.LinkActivity;
-import com.example.android.oceansdaughter.R;
 
 import java.util.List;
 

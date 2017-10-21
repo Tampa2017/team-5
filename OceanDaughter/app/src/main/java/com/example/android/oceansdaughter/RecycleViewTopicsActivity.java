@@ -1,4 +1,4 @@
-package recycleview_topics;
+package com.example.android.oceansdaughter;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,10 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.android.oceansdaughter.R;
-
 import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  * Created by Jats2k12Kite on 10/20/2017.

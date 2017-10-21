@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?android:attr/selectableItemBackground"
@@ -13,14 +14,13 @@
 
     <TextView
         android:id="@+id/topic"
-        android:layout_width="match_parent"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:contextClickable="true"
-        android:fadingEdge="horizontal"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:layout_gravity="center_vertical|start"
+        android:fontFamily="monospace"
+        android:textSize="26sp"
+        tools:text="#42" />
 
 
 </RelativeLayout>
